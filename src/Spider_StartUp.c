@@ -36,11 +36,7 @@ int Spider_StartUp(char *Alpha_url)
 			printf("Analytical Shutdown [Open]!\n");
 		}
 		Spider_Container_get(E_ct,&tmpnode);
-<<<<<<< HEAD
 		if((Spider_Interactive_Process(&tmpnode))==-1)continue;//交互过程(下载和持久化)
-=======
-		Spider_Interactive_Process(&tmpnode);//交互过程(下载和持久化)
->>>>>>> first commit
 		Spider_Container_add(P_ct,tmpnode);//下载完毕添加到已处理
 		Spider_Analytical_HTML(tmpnode,E_ct,P_ct);
 	}

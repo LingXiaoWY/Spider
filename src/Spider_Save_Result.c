@@ -21,11 +21,7 @@ int Spider_Save_Result(const char* h1,const char *description,const char *link)
 		return 0;
 	}
 	//将抓取的数据写入到文件中
-<<<<<<< HEAD
 	sprintf(result,"<tr id=%d><td name=\"h1\">%s<td name=\"description\">%s</td><td name=\"link\"><a href=\"%s\">%s</a></td></tr>\r\n",result_num,h1,description,link,link);
-=======
-	sprintf(result,"<tr id=%d><td name=\"h1\">%s<td name=\"description\"%s</td><td name=\"link\"><a href=\"%s\">%s</a></td></tr>\r\n",result_num,h1,description,link,link);
->>>>>>> first commit
 	write(result_fd,result,strlen(result));
 	if(result_num == RESULT_MAX){
 		write(result_fd,end,strlen(end));
